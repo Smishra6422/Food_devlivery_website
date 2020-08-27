@@ -1,0 +1,36 @@
+.food-slider-container {
+  margin: 2rem auto;
+}
+
+.food-slider-container .glide .glide__slides a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.food-slider-container .glide .glide__slides a .card {
+  position: relative;
+  border: 1.2px solid #fb4c47;
+  height: 19rem;
+}
+
+.food-slider-container .glide .glide__slides a .card img {
+  height: 80%;
+}
+
+.food-slider-container .glide .glide__slides a .card .card-body h3 {
+  color: #fb4c47;
+}
+
+.food-slider-container .glide__arrows button {
+  border: 1.2px solid #fb4c47;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fff8f8), to(#fff8f8));
+  background-image: linear-gradient(to bottom right, #fff8f8, #fff8f8);
+  color: #fb4c47;
+}
+
+.food-slider-container .glide__arrows button:hover {
+  background: #fb4c47;
+  color: #fff;
+}
+/*# sourceMappingURL=food-slider.css.map */

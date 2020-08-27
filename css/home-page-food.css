@@ -1,0 +1,74 @@
+.home-page-food-container .home-page-food-heading {
+  margin-top: 2rem;
+}
+
+.home-page-food-container .home-page-food-lists {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list {
+  padding: 10px;
+  width: 22%;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card {
+  border: none;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card-body {
+  padding: 0;
+  padding-left: 2px;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card-body h5 {
+  margin-bottom: 0.12rem;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card-body p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card-body p span {
+  margin-right: 10px;
+  font-size: 0.81rem;
+  color: #686b78;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card-body .price-container span {
+  font-size: 1rem;
+  margin-right: 0.9rem;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card-body .price-container .off-percent {
+  color: #10F235;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list .card-body .price-container .original-price {
+  font-size: 1.1rem;
+  color: #fb4c47;
+  text-decoration: line-through;
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list:hover {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.home-page-food-container .home-page-food-lists .home-page-food-list:hover .card {
+  border: none;
+}
+/*# sourceMappingURL=home-page-food.css.map */

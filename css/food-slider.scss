@@ -1,0 +1,42 @@
+.food-slider-container {
+  margin: 2rem auto;
+
+  .glide {
+    .glide__slides {
+      a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+
+        .card {
+          position: relative;
+          border: 1.2px solid #fb4c47;
+          height: 19rem;
+
+          img {
+            height: 80%;
+          }
+
+          .card-body {
+            h3 {
+              color: #fb4c47;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .glide__arrows {
+    button {
+      border: 1.2px solid #fb4c47;
+      background-image: linear-gradient(to bottom right, #fff8f8, #fff8f8);
+      color: #fb4c47;
+    }
+
+    button:hover {
+      background: #fb4c47;
+      color: #fff;
+    }
+  }
+}

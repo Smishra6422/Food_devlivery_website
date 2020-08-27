@@ -1,0 +1,75 @@
+.home-page-food-container {
+
+	.home-page-food-heading {
+		margin-top: 2rem;
+	}
+
+	.home-page-food-lists {
+		margin-top: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.home-page-food-list {
+			padding: 10px;
+			width: 22%;
+
+			.card {
+				border: none;
+			}
+
+			.card-body {
+				padding: 0 ;
+				padding-left: 2px;
+				h5 {
+					margin-bottom: 0.12rem;
+					font-size: 1.2rem;
+					// color: #fb4c47;
+					color: #000;
+					font-weight: 500;
+				}
+				p{
+					display: flex;
+					flex-wrap: wrap;
+
+					span {
+						margin-right: 10px;
+						font-size: 0.81rem;
+						color: #686b78;
+					}
+				}
+
+				.price-container {
+
+					span {
+						font-size: 1rem;
+						margin-right: 0.9rem;
+					}
+					
+					.off-percent {
+						
+						color: #10F235;
+						
+					}
+					
+					.original-price {
+						font-size: 1.1rem;
+						color: #fb4c47;
+						text-decoration: line-through;
+
+					}
+				}
+			}
+
+			&:hover {
+				border: 1px solid rgba(0,0,0,.125);
+
+				.card {
+					border: none;
+				}
+			}
+
+		}
+
+	}
+}
