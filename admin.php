@@ -1,8 +1,11 @@
 <?php 
 
-session_start();
+if(!$_SESSION['userId'] && $_SESSION['role']!= 1) {
+	header('location: login.php');
+}
 
 ?>
+
 
 
 
@@ -16,9 +19,9 @@ include "templates/head.php";
 <link rel="stylesheet" href="css/glide.core.min.css">
 <link rel="stylesheet" href="css/glide.theme.min.css">
 <link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/main-head-data.css">
-<link rel="stylesheet" href="css/food-slider.css">
-<link rel="stylesheet" href="css/home-page-food.css">
+<!-- <link rel="stylesheet" href="css/main-head-data.css"> -->
+<!-- <link rel="stylesheet" href="css/food-slider.css"> -->
+<!-- <link rel="stylesheet" href="css/home-page-food.css"> -->
 
 
 
@@ -30,11 +33,7 @@ include "templates/head.php";
 
 include "templates/navbar.php";
 
-include "templates/mainHead.php";
-
-include "templates/foodslider.php";
-
-include "templates/homePageFood.php";
+echo "ADMIN PAGE";
 
 include "templates/bottom.php";
 

@@ -4,6 +4,8 @@
 
      <script   src="https://unpkg.com/@glidejs/glide"></script>
      <script  src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+     <!-- Glider Slider Config -->
     <script >
       // const config = {
       //   type: "carousel",
@@ -24,6 +26,8 @@
         // autoplay:1000
       }).mount();
     </script>
+
+    <!-- Typical Config -->
     <script type="text/javascript" >
       let mainHeadTitle = document.getElementsByClassName('main-head-title')[0]
       var typewriter = new Typewriter(mainHeadTitle, {
@@ -37,6 +41,12 @@
           cursorClassName: 'Typewriter__cursor',
       });
     </script>
+
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+    <script type="text/javascript" src="js/signupValidation.js"></script>
+
+    
 </body>
 </html>
 

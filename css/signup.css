@@ -1,0 +1,92 @@
+.signup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 92vh;
+}
+
+.signup-container .card {
+  border: none;
+  border-top: 5px solid #fb4c47;
+  padding-top: 0.4rem;
+}
+
+.signup-container .card .signup-category {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signup-container .card .signup-category div {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.2rem;
+  background: #fb4c47;
+  border-radius: 3px;
+}
+
+.signup-container .card .signup-category div p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.signup-container .card .signup-category div:hover {
+  cursor: pointer;
+}
+
+.signup-container .card .signup-food-image {
+  margin-top: 0.7rem;
+}
+
+.signup-container .card .signup-food-image .food-image {
+  position: relative;
+  width: 40%;
+  height: 3.4rem;
+  margin: auto;
+}
+
+.signup-container .card .signup-food-image .food-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.signup-container .card .form .signup-title h4 {
+  text-align: center;
+}
+
+.signup-container .card .form form .submit-button {
+  background: #fb4c47;
+  color: #fff;
+}
+
+.signup-container .card .restaurant-signup-container {
+  display: none;
+}
+
+.signup-container .card .user-signup-container.showRest {
+  display: none;
+}
+
+.signup-container .card .showRest {
+  display: block;
+}
+/*# sourceMappingURL=signup.css.map */

@@ -79,17 +79,9 @@
   font-size: 1.1rem;
 }
 
-.navbar-container .navbar-lnks .navbar-item .navbar-item-list:last-child,
-.navbar-container .hide-navbar-links .navbar-item .navbar-item-list:last-child {
-  border: 2px solid #fb4c47;
-  border-radius: 46px;
-}
-
-.navbar-container .navbar-lnks .navbar-item .navbar-item-list:last-child a,
-.navbar-container .hide-navbar-links .navbar-item .navbar-item-list:last-child a {
-  color: #fb4c47;
-  display: inline-block;
-  padding: 0.5rem 1.9rem;
+.navbar-container .navbar-lnks .navbar-item .navbar-item-list a:hover,
+.navbar-container .hide-navbar-links .navbar-item .navbar-item-list a:hover {
+  cursor: pointer;
 }
 
 .navbar-container .navbar-lnks .navbar-item .navbar-item-list:hover a,
