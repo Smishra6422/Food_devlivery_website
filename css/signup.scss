@@ -82,4 +82,10 @@
   
     }
   }
+
+  @media(max-width:60rem) {
+    .signup-container {
+        height: auto;
+    }
+  }
   

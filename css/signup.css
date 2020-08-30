@@ -89,4 +89,10 @@
 .signup-container .card .showRest {
   display: block;
 }
+
+@media (max-width: 60rem) {
+  .signup-container {
+    height: auto;
+  }
+}
 /*# sourceMappingURL=signup.css.map */

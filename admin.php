@@ -1,8 +1,29 @@
 <?php 
 
-if(!$_SESSION['userId'] && $_SESSION['role']!= 1) {
+session_start();
+
+if(!isset($_SESSION['userId']) || !isset($_SESSION['role'])) {
 	header('location: login.php');
 }
+
+?>
+
+<?php
+
+
+// DB FILE
+include 'dbConnection.php';
+		
+		$currentAdminId = $_SESSION['userId'];
+		$foodCount = 0;
+		$foodDataQuery = " select * from food where userId='$currentAdminId'";
+  		 $query = mysqli_query($con,$foodDataQuery);
+
+  		 $foodCount = mysqli_num_rows($query);
+
+  		 $foods = mysqli_fetch_all($query,MYSQLI_ASSOC);
+
+  		 
 
 ?>
 
@@ -16,12 +37,8 @@ include "templates/head.php";
 ?>
 
 
-<link rel="stylesheet" href="css/glide.core.min.css">
-<link rel="stylesheet" href="css/glide.theme.min.css">
 <link rel="stylesheet" href="css/navbar.css">
-<!-- <link rel="stylesheet" href="css/main-head-data.css"> -->
-<!-- <link rel="stylesheet" href="css/food-slider.css"> -->
-<!-- <link rel="stylesheet" href="css/home-page-food.css"> -->
+<link rel="stylesheet" href="css/admin.css">
 
 
 
@@ -33,7 +50,9 @@ include "templates/head.php";
 
 include "templates/navbar.php";
 
-echo "ADMIN PAGE";
+include "templates/admin.php";
+
+include "templates/footer.php";
 
 include "templates/bottom.php";
 

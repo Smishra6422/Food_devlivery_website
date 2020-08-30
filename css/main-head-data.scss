@@ -58,3 +58,46 @@
 
 }
 
+@media (max-width:90rem) {
+	.main-head-container {
+		height:auto;
+
+		.main-head-data {
+			width: 100%;
+			
+	
+			h2,p {
+				padding-left: 4.5%;
+			}
+
+			h2 {
+				font-size: 1.8rem;
+			}
+
+			.search-container {
+				width: 90%;
+				margin: auto;
+				flex-wrap : wrap;
+				justify-content: start;
+	
+				.input-field {
+					width: 100%;
+				}
+	
+				& .col-auto .btn {
+					background: #fb4c47;
+					color: #fff ;
+				} 
+	
+				
+			}
+		}
+
+		
+
+		.main-head-image {
+			display: none;
+		}
+
+	}
+}

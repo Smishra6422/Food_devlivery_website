@@ -3,6 +3,10 @@
 
 session_start();
 
+if (isset($_SESSION['userId'])) {
+  header('location: index.php');
+}
+
 ?>
 
 
@@ -49,6 +53,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   		 		$error = "Email or password do not match!";
   		 	}
   		 	else {
+          $sql = "SELECT * from user where email='$email'";
+          $result = mysqli_query($con,$sql);
+          $userDbData = mysqli_fetch_array($result, MYSQLI_ASSOC);
+          $_SESSION['userId'] = $userDbData['id'];
+          
   		 		header('Location: index.php');
   		 	}
 
@@ -88,14 +97,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $restaurantDisplay = "showRest";
   		 	}
   		 	else {
-          $userDbData = mysqli_fetch_array($query);
-          $_SESSION['userId'] = "ascs";
-          $_SESSION['roll'] = $userDbData['role'];
-
-          // echo $_SESSION['userId'];
+          $sql = "SELECT * from restaurant_user where email='$email'";
+          $result = mysqli_query($con,$sql);
+          $userDbData = mysqli_fetch_array($result, MYSQLI_ASSOC);
+          $_SESSION['userId'] = $userDbData['id'];
+          $_SESSION['role'] = 1;
+          $_SESSION['name'] = $userDbData['name'];
 
           
-  		 		// header('Location: index.php');
+  		 		header('Location: index.php');
   		 	
   		 }
 
@@ -137,12 +147,8 @@ include "templates/head.php";
 ?>
 
 
-<link rel="stylesheet" href="css/glide.core.min.css">
-<link rel="stylesheet" href="css/glide.theme.min.css">
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/login.css">
-<!-- <link rel="stylesheet" href="css/food-slider.css"> -->
-<!-- <link rel="stylesheet" href="css/home-page-food.css"> -->
 
 
 
@@ -156,9 +162,9 @@ include "templates/navbar.php";
 
 include "templates/login.php";
 
-// include "templates/foodslider.php";
+include "templates/footer.php";
 
-// include "templates/homePageFood.php";
+
 
 include "templates/bottom.php";
 

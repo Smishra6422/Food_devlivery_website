@@ -1,5 +1,5 @@
 <div class="container ">
-	<div class="row w-100 signup-container">
+	<div class="row w-100 signup-container mt-5">
 		<div class="col-12 col-md-8 col-xxl-4">
 			<div class="card pb-3 px-2">
 

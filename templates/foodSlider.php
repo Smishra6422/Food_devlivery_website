@@ -2,7 +2,7 @@
 	<div class="glide">
       <div class="glide__track" data-glide-el="track">
         <div class="glide__slides">
-        <a class="glide__slide" href="#">
+        <a class="glide__slide" href="./searchPage.php?search=veg">
           <div class="card " >
       		<img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..." />
       		<div class="card-body">
@@ -12,7 +12,7 @@
       		</div>
     	  </div>
     	</a>
-    	<a class="glide__slide" href="#">
+    	<a class="glide__slide" href="./searchPage.php?search=nonveg">
           <div class="card " >
       		<img src="https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..." />
       		<div class="card-body">
@@ -22,7 +22,7 @@
       		</div>
     	  </div>
     	</a>
-    	<a class="glide__slide" href="#">
+    	<a class="glide__slide" href="./searchPage.php?search=pizza">
           <div class="card " >
       		<img src="https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="..." />
       		<div class="card-body">
@@ -32,7 +32,7 @@
       		</div>
     	  </div>
     	</a>
-    	<a class="glide__slide" href="#">
+    	<a class="glide__slide" href="./searchPage.php?search=burger">
           <div class="card " >
       		<img src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..." />
       		<div class="card-body">
@@ -42,7 +42,7 @@
       		</div>
     	  </div>
     	</a>
-    	<a class="glide__slide" href="#">
+    	<a class="glide__slide" href="./searchPage.php?search=biryani">
           <div class="card " >
       		<img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..." />
       		<div class="card-body">
@@ -52,7 +52,7 @@
       		</div>
     	  </div>
     	</a>
-    	<a class="glide__slide" href="#">
+    	<a class="glide__slide" href="./searchPage.php?search=sandwich">
           <div class="card " >
       		<img src="https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..." />
       		<div class="card-body">
@@ -68,10 +68,10 @@
 
       <div class="glide__arrows" data-glide-el="controls">
         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          prev
+          <i class="fas fa-arrow-left"></i>
         </button>
         <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          next
+          <i class="fas fa-arrow-right"></i>
         </button>
       </div>
     </div>

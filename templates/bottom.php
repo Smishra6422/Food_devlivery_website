@@ -5,6 +5,7 @@
      <script   src="https://unpkg.com/@glidejs/glide"></script>
      <script  src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
+
      <!-- Glider Slider Config -->
     <script >
       // const config = {
@@ -19,11 +20,21 @@
         gap:10,
         animationDuration:1000,
         breakpoints: {
+          1620: {
+            perView: 4,
+          },
+          890: {
+            perView: 3,
+          },
+
           800: {
             perView: 2,
           },
+          410: {
+            perView: 1,
+          },
         },
-        // autoplay:1000
+        // autoplay:2000
       }).mount();
     </script>
 
@@ -42,9 +53,12 @@
       });
     </script>
 
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
     <script type="text/javascript" src="js/signup.js"></script>
     <script type="text/javascript" src="js/signupValidation.js"></script>
+    <script type="text/javascript" src="js/addFoodValidation.js"></script>
+    
 
     
 </body>

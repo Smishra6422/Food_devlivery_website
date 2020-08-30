@@ -89,4 +89,10 @@
 .login-container .card .showRest {
   display: block;
 }
+
+@media (max-width: 60rem) {
+  .login-container {
+    height: auto;
+  }
+}
 /*# sourceMappingURL=login.css.map */

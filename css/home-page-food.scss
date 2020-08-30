@@ -1,75 +1,175 @@
+.veg-container,.non-veg-container,.search-foods-container {
+  min-height: 20rem;
+}
+
+
 .home-page-food-container {
+  .home-page-food-heading {
+    margin-top: 2rem;
+    h2 {
+      padding-left: 10px;
+    }
+  }
 
-	.home-page-food-heading {
-		margin-top: 2rem;
-	}
+  .home-page-food-lists {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-	.home-page-food-lists {
-		margin-top: 2rem;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+    .home-page-food-list {
+      padding: 10px;
+      width: 24%;
 
-		.home-page-food-list {
-			padding: 10px;
-			width: 22%;
+      .card {
+        border: none;
+      }
 
-			.card {
-				border: none;
-			}
+      .card-body {
+        padding: 0;
+        padding-left: 2px;
 
-			.card-body {
-				padding: 0 ;
-				padding-left: 2px;
-				h5 {
-					margin-bottom: 0.12rem;
-					font-size: 1.2rem;
-					// color: #fb4c47;
-					color: #000;
-					font-weight: 500;
-				}
-				p{
-					display: flex;
-					flex-wrap: wrap;
+        h5 {
+          margin-bottom: 0.12rem;
+          font-size: 1.2rem;
+          // color: #fb4c47;
+          color: #000;
+          font-weight: 500;
+        }
 
-					span {
-						margin-right: 10px;
-						font-size: 0.81rem;
-						color: #686b78;
-					}
-				}
+        p {
+          display: flex;
+          flex-wrap: wrap;
 
-				.price-container {
+          span {
+            margin-right: 10px;
+            font-size: 0.8rem;
+            color: #686b78;
+          }
+        }
 
-					span {
-						font-size: 1rem;
-						margin-right: 0.9rem;
-					}
-					
-					.off-percent {
-						
-						color: #10F235;
-						
-					}
-					
-					.original-price {
-						font-size: 1.1rem;
-						color: #fb4c47;
-						text-decoration: line-through;
+        .ingredients {
+          height: 1.45rem;
+          overflow: hidden;
+        }
 
-					}
-				}
-			}
+        .price-container {
+          span {
+            font-size: 1rem;
+            margin-right: 0.9rem;
+          }
 
-			&:hover {
-				border: 1px solid rgba(0,0,0,.125);
+          .off-percent {
+            color: #10f235;
+          }
 
-				.card {
-					border: none;
-				}
-			}
+          .original-price {
+            font-size: 1.1rem;
+            color: #fb4c47;
+            text-decoration: line-through;
+          }
+        }
 
-		}
+        .order-button {
+          background: #fb4c47;
+          color: #fff;
+        }
+      }
 
-	}
+      &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+
+        .card {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 80rem) {
+  .home-page-food-container {
+    .home-page-food-lists {
+      .home-page-food-list {
+        padding: 10px;
+        width: 31%;
+
+        .card-body {
+          p {
+            span {
+              margin-right: 10px;
+              font-size: 0.8rem;
+              color: #686b78;
+            }
+          }
+
+          .price-container {
+            span {
+              font-size: 0.9rem;
+              margin-right: 0.7rem;
+            }
+
+            .original-price {
+              font-size: 1.01rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 45rem) {
+  .home-page-food-container {
+    .home-page-food-lists {
+      .home-page-food-list {
+        width: 100%;
+
+        .card {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          height: 8rem;
+
+          img {
+            position: relative;
+            width: 30%;
+            margin-right: 1rem;
+            height: 90%;
+            margin: auto 1rem auto 0;
+
+          }
+          .card-body {
+            width: 60%;
+            p {
+              span {
+                margin-right: 10px;
+                font-size: 0.8rem;
+                color: #686b78;
+              }
+            }
+
+            .ingredients {
+              height: 1.1rem;
+              overflow: hidden;
+              margin-bottom: 0.4rem;
+            }
+  
+            .price-container {
+              margin-bottom: 0.4rem;
+              span {
+                font-size: 0.9rem;
+                margin-right: 0.7rem;
+              }
+  
+              .original-price {
+                font-size: 1.01rem;
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
 }

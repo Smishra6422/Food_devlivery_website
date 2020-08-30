@@ -4,6 +4,23 @@ session_start();
 
 ?>
 
+<?php
+
+
+// DB FILE
+include 'dbConnection.php';
+
+		$foodDataQuery = " select * from food";
+  		 $query = mysqli_query($con,$foodDataQuery);
+
+  		 // $foodCount = mysqli_num_rows($query);
+
+  		 $foods = mysqli_fetch_all($query,MYSQLI_ASSOC);
+
+  		 
+
+?>
+
 
 
 <?php 
@@ -35,6 +52,8 @@ include "templates/mainHead.php";
 include "templates/foodslider.php";
 
 include "templates/homePageFood.php";
+
+include "templates/footer.php";
 
 include "templates/bottom.php";
 

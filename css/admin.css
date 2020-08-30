@@ -1,0 +1,77 @@
+.admin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 20rem;
+}
+
+.admin-container .aside-bar {
+  position: relative;
+  width: 30%;
+}
+
+.admin-container .aside-bar .card .card-header {
+  height: 5rem;
+  background: #fb4c47;
+}
+
+.admin-container .aside-bar .card .card-header h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.admin-container .aside-bar .card ul li {
+  list-style: none;
+}
+
+.admin-container .aside-bar .card ul li a {
+  text-decoration: none;
+  color: #fb4c47;
+  font: size 1.2rem;
+  text-align: center;
+}
+
+.admin-container .main-container {
+  position: relative;
+  width: 65%;
+}
+
+.admin-container .main-container .admin-heading {
+  position: relative;
+  width: 80%;
+}
+
+.admin-container .main-container .main-data {
+  position: relative;
+  width: 80%;
+}
+
+.admin-container .main-container .main-data ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.admin-container .main-container .main-data ul li ul li {
+  list-style: none;
+  width: 22%;
+  color: #024d4b;
+  font-size: 1.2rem;
+}
+
+.admin-container .main-container .main-data ul li ul li a {
+  text-decoration: none;
+  color: #024d4b;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=admin.css.map */

@@ -1,3 +1,15 @@
+<!-- Session Start -->
+<?php 
+
+session_start();
+
+if (isset($_SESSION['userId'])) {
+  header('location: index.php');
+}
+
+?>
+
+
 <?php
 // define variables and set to empty values
 
@@ -20,6 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   		 $email = testInputData($_POST["email"]);
   		 $foodChoice = testInputData($_POST["foodChoice"]);
   		 $password = testInputData($_POST["password"]);
+
+       $email = strtolower($email);
 
   		 // HASH THE PASSOWRD
   		 $hashPassword = password_hash($password, PASSWORD_BCRYPT);
@@ -118,8 +132,6 @@ include "templates/head.php";
 <link rel="stylesheet" href="css/glide.theme.min.css">
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/signup.css">
-<!-- <link rel="stylesheet" href="css/food-slider.css"> -->
-<!-- <link rel="stylesheet" href="css/home-page-food.css"> -->
 
 
 
@@ -133,9 +145,8 @@ include "templates/navbar.php";
 
 include "templates/signup.php";
 
-// include "templates/foodslider.php";
+include "templates/footer.php";
 
-// include "templates/homePageFood.php";
 
 include "templates/bottom.php";
 

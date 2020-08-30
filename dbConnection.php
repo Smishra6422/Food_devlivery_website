@@ -10,9 +10,7 @@ $con = mysqli_connect($server,$user,$password,$db);
 if($con) {
 	?>
 
-<!-- 	<script type="text/javascript">
-		alert("DB Connection Success")
-	</script> -->
+
 
 
 	<?php

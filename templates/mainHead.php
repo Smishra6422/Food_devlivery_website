@@ -7,16 +7,18 @@
 			<p>Order food from favourite restaurants near you.</p>
 		</div>
 
-		<form class="search-container">
+		<form class="search-container" action="./searchPage.php" method="GET">
 			<div class="mb-3 input-field">
-  				<input type="email" 
+  				<input type="text" 
   				class="form-control" 
   				id="exampleFormControlInput1" 
   				placeholder="Search Food..."
+  				name="search" 
+  				required="true" 
   				>
 			</div>
 			<div class="col-auto">
-    			<a type="submit" class="btn mb-3 search-button" id="aa">Search Food</a>
+    			<button type="submit" class="btn mb-3 search-button" id="aa">Search Food</button>
   			</div>
 		</form>
 	</div>
